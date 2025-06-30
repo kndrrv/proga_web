@@ -1,0 +1,194 @@
+body {
+    background-color: #f0f7ff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+.email-input {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #eef7ff;
+    border-radius: 8px;
+}
+
+.email-input label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.email-input input {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #3498db;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #e1e5eb;
+}
+
+th {
+    background-color: #3498db;
+    color: white;
+    font-weight: bold;
+}
+
+select, input[type="text"], input[type="datetime-local"], textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dce6f0;
+    border-radius: 6px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+#addRow {
+    background-color: #2ecc71;
+}
+
+#addRow:hover {
+    background-color: #27ae60;
+}
+
+.delete-btn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b;
+}
+
+.check-completed {
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+#mensaje {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* ESTILOS PARA LA CONSULTA */
+.consulta-section {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 2px solid #3498db;
+}
+
+.filtro-consulta {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.filtro-consulta input {
+    flex-grow: 1;
+    padding: 8px;
+}
+
+#btnConsulta {
+    padding: 8px 15px;
+    background-color: #4CAF50;
+}
+
+.tabla-resultados {
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+}
+
+.tabla-resultados th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.tabla-resultados td, .tabla-resultados th {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.btn-danger {
+    background-color: #e74c3c;
+    padding: 8px 15px;
+}
+
+.btn-danger:hover {
+    background-color: #c0392b;
+}
+
+.btn-eliminar {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.btn-eliminar:hover {
+    background-color: #c0392b;
+}
+
+/* Ajustes para la columna de acciones en la tabla */
+.tabla-resultados th:nth-child(5),
+.tabla-resultados td:nth-child(5) {
+    width: 100px;
+    text-align: center;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de tareas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Registro diario de tareas</h1>
+        <div class="email-input">
+            <label>Email del usuario:</label>
+            <input type="email" id="userEmail" required>
+        </div>
+        
+        <table id="tareasTable">
+            <thead>
+                <tr>
+                    <th>Tarea</th>
+                    <th>Subtarea</th>
+                    <th>Hora Inicio</th>
+                    <th>Hora Final</th>
+                    <th>Comentarios</th>
+                    <th>Completado</th>
+                    <th>Eliminar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Filas generadas dinámicamente -->
+            </tbody>
+        </table>
+        
+        <button id="addRow">+ Añadir fila</button>
+        <button id="saveAll">Guardar todas las tareas</button>
+        <div id="mensaje"></div>
+        
+<!-- CONSULTA DE TAREAS -->
+    <div class="consulta-section">
+        <h2>Consultar Tareas</h2>
+        <div class="filtro-consulta">
+            <input type="email" id="emailConsulta" placeholder="Email a consultar">
+            <button id="btnConsulta">Buscar</button>
+        </div>
+        <div id="resultadosConsulta"></div>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+
+<!-- ELIMINAR REGISTROS -->
+<div class="filtro-consulta">
+    <input type="email" id="emailConsulta" placeholder="Ingrese email para consultar">
+    <button id="btnConsulta">Consultar</button>
+    <button id="btnEliminarTodas" class="btn-danger">Eliminar Todas</button>
+</div>
+</body>
+</html>
+
